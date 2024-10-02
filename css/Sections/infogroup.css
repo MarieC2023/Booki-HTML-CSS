@@ -76,7 +76,6 @@ input::placeholder{
 .filterbar{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
    }
@@ -117,14 +116,16 @@ input::placeholder{
 }
 
 
-/*------------------------EN ATTENTE----------------------------------------------*/
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-/*
-@media (max-width: 1024px) {}
+
+@media (max-width: 1024px) {
+    
+}
   
 
 /* Small devices (phones, less than 768px) */
