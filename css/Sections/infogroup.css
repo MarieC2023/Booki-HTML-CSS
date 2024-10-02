@@ -1,0 +1,146 @@
+/*CSS de la section info group*/
+.info-group{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: inherit;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+p{
+    margin-top: auto;
+}
+
+/*CSS barre de recherche*/
+
+input::placeholder{
+    color: var(--text-color);
+}
+
+.search{
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+#site-search{
+    border: 1px solid var(--main-bg-color);
+}
+
+.search .icon-search {
+    min-width: 50px;
+    background-color: var(--main-bg-color);
+    font-size: 18px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    height: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none; 
+    outline: none; /*contour*/
+}
+
+.search .search-button{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    padding: 0 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  
+}
+
+.search .search-icon{
+    display: none;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 16px 16px 16px 16px;
+    padding: 0 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*CSS de la barre de filtres*/
+
+.filterbar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+   }
+
+.filter-button{
+    display: flex;
+    gap: 10px;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+.filter-button:hover{
+    background-color: var(--filter-bg-color);
+}
+
+
+
+/*CSS de la barre d'info*/
+.infobar{
+    display: flex;
+    gap: 10px; 
+}
+
+.infobar-i{
+    border: 1px solid var(--main-bg-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    font-size: 11px;
+    text-align: center;
+    
+}
+
+
+/*------------------------EN ATTENTE----------------------------------------------*/
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+/*
+@media (max-width: 1024px) {}
+  
+
+/* Small devices (phones, less than 768px) */
+/*
+@media screen and (max-width: 768px){
+    .search .search-button{
+        display: none;
+    }
+}
+*/
+/*
+@media screen and (max-width: 768px){
+    .search .search-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+
+*/
