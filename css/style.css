@@ -2,7 +2,7 @@
 @import url(Sections/header.css);
 @import url(Sections/infogroup.css);
 @import url(Sections/hebergement.css);
-@import url(Sections/activite.css);
+@import url(Sections/activites.css);
 
 
 
@@ -21,6 +21,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --text-color: black; 
 }
 
 .fa-solid {
@@ -30,9 +31,17 @@
 body {
     display: flex;
     justify-content: center;
+    color: var(--text-color);
+    margin: 0px;
+}
+
+h4{
+    font-size: 18px;
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -85,10 +94,6 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
 
 /****** Populaires ***********/
 .populaires {
