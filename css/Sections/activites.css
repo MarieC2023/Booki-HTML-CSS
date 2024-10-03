@@ -1,13 +1,10 @@
 /************Section Les Activités************/
 
-.activite {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px;
-    align-items: flex-start;
+.activities {
     width: 100%;
+    padding: 30px;
 }
+
 
 /*TITRE H2*/
 
@@ -17,43 +14,29 @@
     align-items: center;
 }
 
-/*regroupement des cartes activités*/
-
-.activite-cards{
-    /*flex-wrap: wrap; a rendre wrap qu'au media queries ?*/
-    width: 100%;
-    max-height: 439px;  
-}
-
-.activite .activite-cards{
+/* Regroupement des cartes*/
+.activities-cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    gap: 30px;
     margin-top: 33px;
-    gap: 20px;
 }
 
-/*carte individuel *4 */
+/*Carte type*/
 
-.activite-cartetype{
+.standard-card {
     display: flex;
     flex-direction: column;
-    width: 297px;
-    height: 100%;
-    min-height: 140px;
-    height: 439px;
+    background-color: white;
+    width: 25%;
     border-radius: 20px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-   
+    gap: 4px;
 }
 
-.activite-cards .card{
-    height: 100%;
-    padding: 0px;
-}
-
-.activite-cards img {
+.standard-card img{
+    object-fit: cover;
     width: 100%;
     max-height: 380px;
     height:100%;
@@ -61,13 +44,16 @@
     border-top-right-radius: 20px;
     margin: 0;
 }
-
-.activite-cards .card-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.standard-card a{
+    height: 100%;
+}
+.standard-card .card-content{
+    width: 100%;
     box-sizing: border-box;
+}
+
+.standard-card .card-title{
+    margin: 20px;
 }
 
 
@@ -78,27 +64,19 @@
 
 @media (max-width: 1024px) {
     
-   .activite-cartetype{
-    max-height: 270px;
-}
-
-.activite-cards .card{
-    max-height: 270px;
-   }
-
-.activite-cards img {
-    max-height: 200px;
-}
-
-
-.activite-cards .card-content {
-    max-height: 70px;
-}
-
-
-
-
-}
+    .standard-card{
+     max-height: 270px;
+ }
+ 
+ .standard-card img {
+     max-height: 200px;
+ }
+ 
+ .standard-card .card-content {
+     max-height: 70px;
+ }
+ 
+ }
 
 /* Small devices (phones, less than 768px) */
 /*
