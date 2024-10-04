@@ -106,5 +106,33 @@
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .hebergements {
+        width: 100%;       
+    }
+
+    #LesHebergements{
+        background-color: white;
+    }
+    .hebergements-title h2 {
+        width: 100%;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+    .hebergements-cards .card-title {
+        font-size: 13px;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: 12px;
+    }
 }
