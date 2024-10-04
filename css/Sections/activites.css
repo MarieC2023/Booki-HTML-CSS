@@ -65,24 +65,40 @@
 @media (max-width: 1024px) {
     
     .standard-card{
-     max-height: 270px;
- }
+        max-height: 270px;
+    }
  
- .standard-card img {
-     max-height: 200px;
- }
+    .standard-card img {
+        max-height: 200px;
+    }
  
- .standard-card .card-content {
-     max-height: 70px;
- }
+    .standard-card .card-content {
+        max-height: 70px;
+    }
  
  }
 
 /* Small devices (phones, less than 768px) */
-/*
+
 @media (max-width: 767.98px) {
-    .activite-cards{
-        flex-wrap: wrap;
-    
+    .activities{
+        width: 100%;
     }
-}*/
+
+/* Regroupement des cartes*/
+
+.activities-cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    margin-top: 33px;
+}
+
+/*Carte type*/
+
+    .standard-card {
+        width: 100%;   
+}
+
+}
