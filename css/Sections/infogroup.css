@@ -18,6 +18,10 @@ p{
     color: var(--text-color);
 }
 
+input{
+    width: 100%;
+}
+
 input::placeholder{
     color: var(--text-color);
 }
@@ -149,6 +153,12 @@ input::placeholder{
     }
 
 /*CSS barre de recherche*/
+    .search{
+        display: flex;
+        width: fit-content;
+        border: 1px solid var(--main-bg-color);
+    }
+
     .search .search-button{
         display: none;
     }
@@ -156,12 +166,6 @@ input::placeholder{
     .search .search-icon{
         display: flex;
         align-items: center;
-    }
-
-    .search{
-        display: flex;
-        width: fit-content;
-        border: 1px solid var(--main-bg-color);
     }
 
     #site-search{
