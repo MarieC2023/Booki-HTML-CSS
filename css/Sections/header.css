@@ -59,6 +59,10 @@ ul{
         align-items: center;
     }
 
+    .nav{
+        gap: 0px;
+    }
+    
     .navbarre{
         border-bottom: 2px solid rgba(0, 0, 0, 0);
         padding: 0px 50px 14px 50px;
