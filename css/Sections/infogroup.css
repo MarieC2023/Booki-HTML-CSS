@@ -139,7 +139,7 @@ input::placeholder{
 /*CSS de la section info group*/
     .info-group{
         width: 100%;
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
 /*CSS barre de recherche*/
@@ -189,7 +189,6 @@ input::placeholder{
 .infobar p{
     width: 100%;
     line-height: 1.30;
-    font-size: 15px;
     margin-top: 20px;
 }
 
