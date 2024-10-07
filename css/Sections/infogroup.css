@@ -14,12 +14,16 @@ p{
 
 /*CSS barre de recherche*/
 
+.icon-search i{
+    color: var(--text-color);
+}
+
 input::placeholder{
     color: var(--text-color);
 }
 
 .search{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     border-radius: 16px;
     margin-top: 20px;
@@ -27,6 +31,9 @@ input::placeholder{
 
 #site-search{
     border: 1px solid var(--main-bg-color);
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .search .icon-search {
@@ -39,11 +46,12 @@ input::placeholder{
     align-items: center;
 }
 
-.search input {
+.search-icon i{
+    color: white;
+}
+
+.search{
     height: 50px;
-    padding-left: 20px;
-    font-size: 18px;
-    font-weight: 700;
     border: none; 
     outline: none; /*contour*/
 }
@@ -107,6 +115,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     gap: 10px; 
+    margin-top: 20px;
 }
 
 .infobar-i{
@@ -117,7 +126,7 @@ input::placeholder{
     padding: 5px;
     font-size: 11px;
     text-align: center;
-    
+    /*margin-top: 20px;*/
 }
 
 
@@ -153,7 +162,7 @@ input::placeholder{
     }
 
     .search{
-        width: 100%;
+        width: fit-content;
         border: 1px solid var(--main-bg-color);
     }
 
@@ -189,7 +198,6 @@ input::placeholder{
 .infobar p{
     width: 100%;
     line-height: 1.30;
-    margin-top: 20px;
 }
 
  
