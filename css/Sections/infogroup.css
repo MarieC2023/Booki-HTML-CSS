@@ -27,6 +27,8 @@ input::placeholder{
     flex-direction: row;
     border-radius: 16px;
     margin-top: 20px;
+    height: 50px;
+    border: none; 
 }
 
 #site-search{
@@ -50,11 +52,6 @@ input::placeholder{
     color: white;
 }
 
-.search{
-    height: 50px;
-    border: none; 
-    outline: none; /*contour*/
-}
 
 .search .search-button{
     background-color: var(--main-color);
@@ -162,6 +159,7 @@ input::placeholder{
     }
 
     .search{
+        display: flex;
         width: fit-content;
         border: 1px solid var(--main-bg-color);
     }
