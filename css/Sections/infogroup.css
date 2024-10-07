@@ -18,10 +18,6 @@ p{
     color: var(--text-color);
 }
 
-input{
-    width: 100%;
-}
-
 input::placeholder{
     color: var(--text-color);
 }
@@ -66,7 +62,6 @@ input::placeholder{
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-  
 }
 
 .search .search-icon{
@@ -91,7 +86,7 @@ input::placeholder{
     align-items: center;
     gap: 20px;
     margin-top: 20px;
-   }
+}
 
 .filter-button{
     display: flex;
@@ -153,6 +148,11 @@ input::placeholder{
     }
 
 /*CSS barre de recherche*/
+
+    input{
+        width: 100%;
+    }
+
     .search{
         display: flex;
         width: fit-content;
