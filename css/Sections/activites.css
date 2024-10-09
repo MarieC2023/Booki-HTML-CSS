@@ -64,7 +64,19 @@
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
-    
+   /* 
+    .activities{
+        width: 100%;
+    }*/
+
+/* Regroupement des cartes*/
+
+.activities-cards{
+    gap: 15px;
+}
+
+/*Carte type*/
+
     .standard-card{
         max-height: 270px;
     }
@@ -72,7 +84,11 @@
     .standard-card img {
         max-height: 200px;
     }
- 
+
+    .standard-card .card-title{
+        font-size: 14px;
+    }
+
     .standard-card .card-content {
         max-height: 70px;
     }
@@ -107,4 +123,7 @@
     max-height: 141px;
 }
 
+.standard-card .card-title{
+    font-size: 13px;
+}
 }
