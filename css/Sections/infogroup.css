@@ -76,6 +76,11 @@ input::placeholder{
 }
 
 /*CSS de la barre de filtres*/
+.filter-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .filter-mobile{
     display: flex;
     gap: 20px;
@@ -132,6 +137,10 @@ input::placeholder{
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+    .filter-title{
+        font-size: 16px;
+    }
+
     .filter-button{
         font-size: 16px;
     }
@@ -174,6 +183,10 @@ input::placeholder{
 
     
 /*CSS de la barre de filtres*/
+    .filter-title{
+        font-size: 15px;
+    }
+    
     .filter-mobile{
         display: flex;
         flex-direction: row;
